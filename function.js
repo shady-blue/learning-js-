@@ -59,3 +59,13 @@ console.log(isPrime(101))
 console.log(isPrime(10));
 console.log(isPrime(9));
 
+function getPrimeNum(numbers){
+    let primeNum = []
+    for(let i =0 ;i < numbers.length;i++){
+        if(isPrime(numbers[i])){
+            primeNum.push(numbers[i])
+        }
+    }
+  return primeNum
+}
+console.log(getPrimeNum([11,15,91,13,5153,53,12,81,69]));
