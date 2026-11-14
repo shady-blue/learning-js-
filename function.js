@@ -36,16 +36,26 @@ console.log(getEvenNum([12, 3, 22, 35, 55, 20, 60]));
 // } 
 //نکته:بخوایم اول بودن یا نبودن عدد های دیگه بفهمیم نمیتونیم این کد رو چند بار بنویسیم
 //پس بجای تکرار کردن کد از توابع استفاده کنیم
-function isPrime (number){
-    let count = 0;
-    for(let i = 1; i <= number ; i++){
-        if(number % i ==0)
-            count++;
+// function isPrime (number){
+//     let count = 0;
+//     for(let i = 1; i <= number ; i++){
+//         if(number % i ==0)
+//             count++;
+//     }
+//     if(count==2)
+//         return true;
+//     else
+//         return false;
+// }
+//shorter version
+function isPrime(number){
+    for(let i =2 ; i <number ; i++){
+        if(number % i == 0)
+            return false;
     }
-    if(count==2)
-        return true;
-    else
-        return false;
+    return true
 }
+console.log(isPrime(101))
 console.log(isPrime(10));
 console.log(isPrime(9));
+
