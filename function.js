@@ -69,3 +69,28 @@ function getPrimeNum(numbers){
   return primeNum
 }
 console.log(getPrimeNum([11,15,91,13,5153,53,12,81,69]));
+ 
+function rangePrime(firstNum ,lastNum){
+    var result = [];
+    for(var i = firstNum; i <=lastNum; i++){
+        if(isPrime(i)== true)
+            result.push(i);
+    }
+    return result;
+}
+console.log(rangePrime(12,20));
+console.log(rangePrime(50,100));
+
+
+//prime numbers without using function
+var result = []
+for (var j =12 ; j <= 20 ; j++){
+    var count =0 ;
+    for(var i =1 ; i<= j ;i++){
+        if(j % i ==0)
+            count++;
+    }
+    if(count == 2)
+        result.push(j);
+}
+console.log(result)
