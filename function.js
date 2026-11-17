@@ -1,3 +1,4 @@
+//expression function for finding average number(grade)
 var average = function (num1, num2, num3, num4, num5) {
   var total = num1 + num2 + num3 + num4 + num5;
   var av = total / 5;
@@ -11,6 +12,7 @@ console.log(average(10, 20, 15.5, 12, 20));
 var state = average(15, 10, 10, 12, 11);
 console.log(state);
 //-------------
+//finding even numbers in array
 function getEvenNum(arrayNum) {
   let evenNum = [];
   for (let i = 0; i < arrayNum.length; i++) {
@@ -55,6 +57,7 @@ function isPrime(number){
     }
     return true
 }
+console.log(isPrime(1))
 console.log(isPrime(101))
 console.log(isPrime(10));
 console.log(isPrime(9));
@@ -94,3 +97,5 @@ for (var j =12 ; j <= 20 ; j++){
         result.push(j);
 }
 console.log(result)
+//...................................
+//base exponent function
