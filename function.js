@@ -99,3 +99,18 @@ for (var j =12 ; j <= 20 ; j++){
 console.log(result)
 //...................................
 //base exponent function
+//without function
+let outcome =1;
+for (let i = 1; i<= 5 ;i++){
+  outcome *= 2 ;
+}
+console.log(outcome);
+//with function
+function power(base,exponent){
+  let outcome =1 ;
+  for (let i = 1; i<= exponent ;i++){
+  outcome *= base ;
+  }
+  return outcome;
+}
+console.log(power(2,6))
